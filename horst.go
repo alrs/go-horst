@@ -13,28 +13,27 @@ import (
 
 const timeLayout = "2006-01-02 15:04:05.000000 -0700"
 
-const (
-	CTRL   = 0x000001 //	WLAN Control frame
-	MGMT   = 0x000002 //	WLAN Management frame
-	DATA   = 0x000004 //	WLAN Data frame
-	BADFCS = 0x000008 //	WLAN frame checksum (FCS) bad
-	BEACON = 0x000010 //	WLAN beacon frame
-	PROBE  = 0x000020 //	WLAN probe request or response
-	ASSOC  = 0x000040 //	WLAN associaction request/response frame
-	AUTH   = 0x000080 //	WLAN authentication frame
-	RTSCTS = 0x000100 //	WLAN RTS or CTS
-	ACK    = 0x000200 //	WLAN ACK or BlockACK
-	NULL   = 0x000400 //	WLAN NULL Data frame
-	QDATA  = 0x000800 //	WLAN QoS Data frame (WME/WMM)
-	ARP    = 0x001000 //	ARP packet
-	IP     = 0x002000 //	IP packet
-	ICMP   = 0x004000 //	IP ICMP packet
-	UDP    = 0x008000 //	IP UDP
-	TCP    = 0x010000 //	IP TCP
-	OLSR   = 0x020000 //	OLSR protocol
-	BATMAN = 0x040000 //	BATMAND Layer3 or BATMAN-ADV Layer 2 frame
-	MESHZ  = 0x080000 //	MeshCruzer protocol
-)
+//  PacketTypes
+//	CTRL   WLAN Control frame
+//	MGMT   WLAN Management frame
+//	DATA   WLAN Data frame
+//	BADFCS WLAN frame checksum (FCS) bad
+//	BEACON WLAN beacon frame
+//	PROBE  WLAN probe request or response
+//	ASSOC  WLAN associaction request/response frame
+//	AUTH   WLAN authentication frame
+//	RTSCTS WLAN RTS or CTS
+//	ACK    WLAN ACK or BlockACK
+//	NULL   WLAN NULL Data frame
+//	QDATA  WLAN QoS Data frame (WME/WMM)
+//	ARP    ARP packet
+//	IP     IP packet
+//	ICMP   IP ICMP packet
+//	UDP    IP UDP
+//	TCP    IP TCP
+//	OLSR   OLSR protocol
+//	BATMAN BATMAND Layer3 or BATMAN-ADV Layer 2 frame
+//	MESHZ  MeshCruzer protocol
 
 type Packet struct {
 	Time        time.Time
